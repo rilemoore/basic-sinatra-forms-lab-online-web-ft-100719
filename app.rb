@@ -8,7 +8,9 @@ class App < Sinatra::Base
 
   post "/team" do
     binding.pry
-    if(params)
+    if(params.name =="")
+      redirect "/newteam"
+    end
       @team = params
     erb :team
   end
