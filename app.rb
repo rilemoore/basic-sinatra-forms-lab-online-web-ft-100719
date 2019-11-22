@@ -10,8 +10,9 @@ class App < Sinatra::Base
     binding.pry
     if(params.name =="")
       redirect "/newteam"
-    end
+    else
       @team = params
+    end
     erb :team
   end
 
