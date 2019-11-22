@@ -12,8 +12,9 @@ class App < Sinatra::Base
       redirect "/newteam"
     else
       @team = params
+      erb :team
     end
-    erb :team
+    
   end
 
 end
