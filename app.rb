@@ -8,7 +8,6 @@ class App < Sinatra::Base
 
   post "/team" do
     @team = params
-    binding.pry
     erb :team
   end
 
